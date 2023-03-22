@@ -13,3 +13,6 @@ Once done with the course one would need to start jumping through the release no
 Let's see if my patience grow up to such a point. I already feel a scratch of annoyance in my brain for learning this language.<br>
 Ok, so Java 14 is already on [Oracle archive](https://www.oracle.com/pl/java/technologies/javase/jdk14-archive-downloads.html)...<br>
 ...and I need to create an account...<br>
+But it's done, I got similar output on slightly highier version of JDK:<br>
+![JDK from my environment](/assets/myjdk14.PNG "JDK from my environment")<br>
+This was exhausting: nap time.
