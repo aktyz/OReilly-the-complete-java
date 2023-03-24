@@ -7,19 +7,12 @@ public class Proj2_1_AverageOfThree {
         double secondNumber;
         double thirdNumber;
 
-        System.out.println("What's your first real number?");
+        System.out.println("Please enter three numbers");
         firstNumber = keyboard.nextDouble();
-        keyboard.nextLine();
-
-        System.out.println("What's your second real number?");
         secondNumber = keyboard.nextDouble();
-        keyboard.nextLine();
-
-        System.out.println("What's your third real number?");
         thirdNumber = keyboard.nextDouble();
-        keyboard.nextLine();
+        keyboard.nextLine(); //good habit to get into
 
-        System.out.println("The mean of your numbers is " + (firstNumber + secondNumber + thirdNumber)/3);
-
+        System.out.println("The mean of your numbers is " + (firstNumber + secondNumber + thirdNumber)/3.0);
     }
 }
