@@ -6,7 +6,7 @@ public class ConversionFun {
         int myInteger = 2147483647; // int data type holds 4 bytes of memory FOR WHOLE NUMBERS
         long myLong = 55; // long data type holds 8 bytes of memory FOR WHOLE NUMBERS
 
-        // FLOATING POINT TYPES
+        // FLOATING POINT TYPES/real numbers
         float myFloat = 3.14F; // float data type holds 4 bytes of memory FOR FLOATING POINT
         //float myFloat = 3.14; // narrowing/lossy conversion
         double myDouble = 3.14; // double data type holds double times float = 8 bytes of memory FOR FLOATING POINT
