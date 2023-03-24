@@ -15,7 +15,7 @@ Ok, so Java 14 is already on [Oracle archive](https://www.oracle.com/pl/java/tec
 ...and I need to create an account...<br>
 [JDK 14 Documentation link](https://docs.oracle.com/en/java/javase/14/index.html)<br>
 [Java 14 API Documentation link](https://docs.oracle.com/en/java/javase/14/docs/api/index.html)<br>
-But it's done, I got similar output on slightly highier version of JDK:<br>
+But it's done, I got similar output on slightly higher version of JDK:<br>
 ![JDK from my environment](/assets/myjdk14.PNG "JDK from my environment")<br>
 This was exhausting: nap time.
 - Primitive vs Reference Types - There are 8 primitive types in Java: byte, short, int, long, float, double, char, boolean - they hold the value of interest directly. String is the only reference data type we saw so far - it holds the *memory address* of the object of interest
@@ -24,10 +24,15 @@ This was exhausting: nap time.
 - Comments - single line vs. multiline comments
 ```java
 // some comment here - single line
-int number = 37;
+class Number {
+    int number = 37;
 /* 
         multiple lines
         of comments
  */
+}
 ```
-- Arthmetic Operators available in Java
+- Arithmetic Operators available in Java
+- Relational Operators available in Java
+- Logical Operators available in Java
+- 
