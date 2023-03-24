@@ -12,6 +12,7 @@ public class KeyboardInput {
         System.out.println("What's your age?");
         age = keyboard.nextInt(); /* ignores the next line character,
         leaving it in the stream for the next command to pick it up */
+        keyboard.nextLine();
 
         System.out.println("What city do you live in?");
         city = keyboard.nextLine();
