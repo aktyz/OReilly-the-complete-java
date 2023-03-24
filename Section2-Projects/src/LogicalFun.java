@@ -1,6 +1,6 @@
 public class LogicalFun {
     public static void main(String[] args) {
-        boolean isRaining = true;
+        boolean isRaining = false;
         boolean isWarm = true;
 
         boolean combined = isRaining && isWarm;

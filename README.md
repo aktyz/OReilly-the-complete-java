@@ -35,4 +35,21 @@ class Number {
 - Arithmetic Operators available in Java
 - Relational Operators available in Java
 - Logical Operators available in Java
-- 
+
+**24th March 2023**
+- User Input - here we are touching for the first time JAVA packages: java.lang & java.util.Scanner<br>
+```java
+import java.util.Scanner;
+public class KeyboardInput {
+    public static void main(String[] args) {
+        Scanner keyboard = new Scanner(System.in);
+        String name;
+
+        System.out.println("What's your name?");
+        name = keyboard.nextLine();
+
+        System.out.println("Hello, " + name);
+    }//end main
+}
+```
+<br>java.lang package is the default package - it is imported automatically in the beginning of each Java File, once we create .java file.<br>
