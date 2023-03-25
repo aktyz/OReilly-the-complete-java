@@ -57,3 +57,12 @@ public class KeyboardInput {
 1. number reading functions are leaving EOL char in the stream causing your following nextLine() function to skip getting user input
 2. floating number inputs are taking the ./, from the system, so I needed to input "3,5" instead of "3.5", however the program output was:<br>
    ![program output with a dot](/assets/twiceYourNumber.PNG "Java program output with a dot")<br><br>
+
+**25th March 2023**
+I am sick of Java and of this world. Here's my version of your learning example John p. Baugh:
+```shell
+There's once was a stupid boy named John who was a fat programmer in the Kingdom of Earth. He loved to wear glasses and to masochism. He wanted to marry the wise layer named Lucy but his mother, Queen Lucia forbid him from seeing her.
+```
+Why does coding classes include this sick theme of males forbiding females of doing something. I want to throw up...
+Go choke on it John!
+Fuck this shit!
