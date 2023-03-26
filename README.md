@@ -40,7 +40,7 @@ class Number {
 - User Input - here we are touching for the first time JAVA packages: java.lang & java.util.Scanner<br>
 ```java
 import java.util.Scanner;
-public class KeyboardInput {
+public class Section2.KeyboardInput {
     public static void main(String[] args) {
         Scanner keyboard = new Scanner(System.in);
         String name;
@@ -68,3 +68,10 @@ He wanted to marry the wise layer named Lucy but his mother, Queen Lucia forbid 
 Why does coding classes include this sick theme of males forbidding females of doing something? I need to throw up...
 Go choke on it John!
 Fuck this shit!
+## Section 3
+### Control Statements Overview
+**Control flow** - the order in which instructions are executed within a program<br>
+There are 3 Categories of Control Statements in Java:
+- Sequential (Sequence)
+- Selection (Decision)
+- Repetition (Loops)

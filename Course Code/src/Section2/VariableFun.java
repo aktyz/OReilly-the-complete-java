@@ -1,3 +1,5 @@
+package Section2;
+
 public class VariableFun {
     public static void main(String[] args) {
         int age; // variable declaration, where 'age' is variable identifier

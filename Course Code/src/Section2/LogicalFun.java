@@ -1,3 +1,5 @@
+package Section2;
+
 public class LogicalFun {
     public static void main(String[] args) {
         boolean isRaining = false;
