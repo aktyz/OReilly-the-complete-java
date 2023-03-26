@@ -75,3 +75,9 @@ There are 3 Categories of Control Statements in Java:
 - Sequential (Sequence)
 - Selection (Decision)
 - Repetition (Loops)
+
+
+**Selection Control Statements**<br>
+- The **if** statement
+- The **if-else** statement
+- the **switch** statement
