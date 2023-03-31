@@ -40,7 +40,7 @@ class Number {
 - User Input - here we are touching for the first time JAVA packages: java.lang & java.util.Scanner<br>
 ```java
 import java.util.Scanner;
-public class Section2.KeyboardInput {
+public class KeyboardInput {
     public static void main(String[] args) {
         Scanner keyboard = new Scanner(System.in);
         String name;
@@ -80,4 +80,11 @@ There are 3 Categories of Control Statements in Java:
 **Selection Control Statements**<br>
 - The **if** statement
 - The **if-else** statement
-- the **switch** statement
+- the **switch** statement<br><br>
+
+**Repetition Control Statements**<br>
+- The **while** loop
+- The **do-while** loop
+- The **for** loop
+- The **for-each** loop (syntactic sugar)
+
