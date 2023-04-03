@@ -88,3 +88,12 @@ There are 3 Categories of Control Statements in Java:
 - The **for** loop
 - The **for-each** loop (syntactic sugar)
 
+**Continue and Break**
+- statements to be used with loops
+- continue used inside a loop sends the execution to its begining while
+break will exit the loop entirely:<br>
+  ![continue vs. break loop output](/assets/continueBreak.PNG "Continue vs. break loop output")<br><br>
+
+> Have a read on **Structured Programming Paradigm** in your free moment<br>
+
+
