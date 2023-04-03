@@ -54,6 +54,7 @@ public class KeyboardInput {
 ```
 <br>java.lang package is the default package - it is imported automatically in the beginning of each Java File, once we create .java file.<br>
 ### java.util.Scanner gotchas
+> [Java 14 Scanner Class docs](https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/util/Scanner.html)<br>
 1. number reading functions are leaving EOL char in the stream causing your following nextLine() function to skip getting user input
 2. floating number inputs are taking the ./, from the system, so I needed to input "3,5" instead of "3.5", however the program output was:<br>
    ![program output with a dot](/assets/twiceYourNumber.PNG "Java program output with a dot")<br><br>
@@ -96,4 +97,6 @@ break will exit the loop entirely:<br>
 
 > Have a read on **Structured Programming Paradigm** in your free moment<br>
 
-
+### Pseudo-Random Numbers Generators
+I will skip the mathematical discussion on why machines are not able to generate truly random numbers <br>
+> [Java 14 Random Class docs](https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/util/Random.html)<br>
