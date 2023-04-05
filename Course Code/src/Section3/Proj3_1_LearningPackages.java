@@ -7,39 +7,40 @@ public class Proj3_1_LearningPackages {
         Scanner keyboard = new Scanner(System.in);
         int userChosenPackage;
         int numberOfCoursesUserEnrolled;
+        int numberOfCoursesIncludedInPackage;
+        int baseCost;
+        int pricePerAdditionalCourse;
         int totalCost = 0;
 
         System.out.println("Which package do you want: 1, 2 or 3?");
         userChosenPackage = keyboard.nextInt();
         keyboard.nextLine();
+
         System.out.println("How many courses have you enrolled this month?");
         numberOfCoursesUserEnrolled = keyboard.nextInt();
         keyboard.nextLine();
+        // in switch statement set up the variables
+        /* use if-else chain to avoid the error of uninitialized variable*/
+        if(userChosenPackage == 1) {
+            baseCost = 10;
+            numberOfCoursesIncludedInPackage = 2;
+            pricePerAdditionalCourse = 6;
+        } else if (userChosenPackage == 2) {
+            baseCost = 12;
+            numberOfCoursesIncludedInPackage = 4;
+            pricePerAdditionalCourse = 4;
+        } else {
+            baseCost = 15;
+            numberOfCoursesIncludedInPackage = 6;
+            pricePerAdditionalCourse = 3;
+        }
 
-        switch(userChosenPackage) {
-            case 1:
-                if ((numberOfCoursesUserEnrolled - 2) > 0)
-                    totalCost = 10 + 6 * numberOfCoursesUserEnrolled - 2;
-                else totalCost = 10;
-                break;
-            case 2:
-                if ((numberOfCoursesUserEnrolled - 4) > 0)
-                    totalCost = 12 + 4 * (numberOfCoursesUserEnrolled - 4);
-                else totalCost = 12;
-                break;
-            case 3:
-                if ((numberOfCoursesUserEnrolled - 6) > 0)
-                    totalCost = 15 + 3 * (numberOfCoursesUserEnrolled - 6);
-                else totalCost = 15;
-                break;
-            default:
-                System.out.println("Please provide valid numbers");
-            }
-            if(userChosenPackage > 0 && userChosenPackage < 4) {
-                System.out.println("Your total cost is " + totalCost + "$");
+            // in order not to repeat the calculation logic in each switch case
+            if(numberOfCoursesUserEnrolled - numberOfCoursesIncludedInPackage > 0) {
+                totalCost = baseCost + (numberOfCoursesUserEnrolled - numberOfCoursesIncludedInPackage) * pricePerAdditionalCourse;
             } else {
-                System.out.println("You provided invalid numbers");
+                totalCost = baseCost;
             }
-        } // end of main
-
-    } //end of class
+            System.out.println("Your total cost is " + totalCost + "$");
+        }
+    }
