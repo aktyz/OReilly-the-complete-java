@@ -10,7 +10,7 @@ public class Proj3_2_DivisibleByThree {
         System.out.println("Provide a number:");
         userNumber = keyboard.nextInt();
 
-        if(userNumber%3 == 0) {
+        if(userNumber % 3 == 0) {
             System.out.println(userNumber + " is divisible by 3");
         } else {
             System.out.println(userNumber + " is NOT divisible by 3");
