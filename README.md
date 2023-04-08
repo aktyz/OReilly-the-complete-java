@@ -91,7 +91,7 @@ There are 3 Categories of Control Statements in Java:
 
 **Continue and Break**
 - statements to be used with loops
-- continue used inside a loop sends the execution to its begining while
+- continue used inside a loop sends the execution to loop's beginning while
 break will exit the loop entirely:<br>
   ![continue vs. break loop output](/assets/continueBreak.PNG "Continue vs. break loop output")<br><br>
 
@@ -100,3 +100,21 @@ break will exit the loop entirely:<br>
 ### Pseudo-Random Numbers Generators
 I will skip the mathematical discussion on why machines are not able to generate truly random numbers <br>
 > [Java 14 Random Class docs](https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/util/Random.html)<br>
+
+## Section 4
+Very first data structures - collections of elements
+### Arrays
+- elements must be type homogenous
+
+### ChatGPT Array info:
+You can find the Java SE 14 documentation for the java.util.Arrays class, which provides utility methods for working with arrays, including sorting, searching, and filling arrays, at the following link:
+
+> [Java 14 Arrays docs](https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/util/Arrays.html)
+
+Additionally, you can find the Java SE 14 documentation for the java.lang.reflect.Array class, which provides **static methods for creating and manipulating arrays using reflection**, at the following link:
+
+> [Java 14 Reflect Array docs](https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/lang/reflect/Array.html)
+
+Both of these classes are part of the Java Standard Library and are included in the JDK (Java Development Kit) distribution.
+
+**Creating and manipulating arrays using reflection** is a way of programmatically creating and modifying arrays at runtime, rather than at compile time. This can be useful in certain situations, such as when you don't know the size of the array until runtime or when you need to work with arrays of different types.
