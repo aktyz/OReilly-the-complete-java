@@ -9,10 +9,10 @@ public class Proj4_2_ArrayLists {
         ArrayList<Double> myAL = new ArrayList<>();
         double userNumber = 1.0;
 
-        while(userNumber > 0.0) {
+        while(userNumber >= 0) {
             System.out.print("Provide real number greater than 0, or -1 to end\t");
             userNumber = s.nextDouble();
-            if(userNumber < 0.0) {
+            if(userNumber < 0) {
                 for(int i = myAL.size() -1; i >= 0; i--) {
                     System.out.println(myAL.get(i));
                 }
