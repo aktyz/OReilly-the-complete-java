@@ -120,7 +120,21 @@ Both of these classes are part of the Java Standard Library and are included in 
 **Creating and manipulating arrays using reflection** is a way of programmatically creating and modifying arrays at runtime, rather than at compile time. This can be useful in certain situations, such as when you don't know the size of the array until runtime or when you need to work with arrays of different types.
 
 ### Array List
-Array List can only hold Reference types, not the primitive types.
-We don't need to declare the size of Array List - as we can add and remove elements from it on the go.
+- ArrayList can only hold Reference types, not the primitive types.
+- We don't need to declare the size of Array List - as we can add and remove elements from it on the go.
+- ArrayList are type of entity known as **generic**
+- **Generics** can only work with reference types
+- For handling the primitives we have 8 Wrapper Classes
 
 > [Java 14 ArrayList docs](https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/util/ArrayList.html)
+
+### Wrapper Classes
+Those classes wrap a value of primitive type variable in an object. An object of Wrapper Class contains a single field whose type is its corresponding primitive.
+1. [Byte](https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/lang/Byte.html)
+2. [Short](https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/lang/Short.html)
+3. [Integer](https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/lang/Integer.html)
+4. [Long](https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/lang/Long.html)
+5. [Float](https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/lang/Float.html)
+6. [Double](https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/lang/Double.html)
+7. [Character](https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/lang/Character.html)
+8. [Boolean](https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/lang/Boolean.html)
