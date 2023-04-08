@@ -106,7 +106,7 @@ Very first data structures - collections of elements
 ### Arrays
 - elements must be type homogenous
 
-### ChatGPT Array info:
+#### ChatGPT Array info:
 You can find the Java SE 14 documentation for the java.util.Arrays class, which provides utility methods for working with arrays, including sorting, searching, and filling arrays, at the following link:
 
 > [Java 14 Arrays docs](https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/util/Arrays.html)
@@ -118,3 +118,9 @@ Additionally, you can find the Java SE 14 documentation for the java.lang.reflec
 Both of these classes are part of the Java Standard Library and are included in the JDK (Java Development Kit) distribution.
 
 **Creating and manipulating arrays using reflection** is a way of programmatically creating and modifying arrays at runtime, rather than at compile time. This can be useful in certain situations, such as when you don't know the size of the array until runtime or when you need to work with arrays of different types.
+
+### Array List
+Array List can only hold Reference types, not the primitive types.
+We don't need to declare the size of Array List - as we can add and remove elements from it on the go.
+
+> [Java 14 ArrayList docs](https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/util/ArrayList.html)
