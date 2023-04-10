@@ -9,12 +9,12 @@ public class Proj4_3_Parallel {
         int[] ages = new int[5];
 
         for(int i = 0; i < names.length; i++) {
-        System.out.print("Please provide a name:\t");
-        names[i] = s.nextLine();
+            System.out.print("Please provide a name:\t");
+            names[i] = s.nextLine();
 
-        System.out.print("Please provide age: \t");
-        ages[i] = s.nextInt();
-        s.nextLine();
+            System.out.print("Please provide age: \t");
+            ages[i] = s.nextInt();
+            s.nextLine();
         }
 
         for(int i = 0; i < names.length; i++) {

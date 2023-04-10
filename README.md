@@ -138,3 +138,6 @@ Those classes wrap a value of primitive type variable in an object. An object of
 6. [Double](https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/lang/Double.html)
 7. [Character](https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/lang/Character.html)
 8. [Boolean](https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/lang/Boolean.html)
+
+## Section 5
+[String equals](https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/lang/String.html#equals(java.lang.Object)) vs. [String compareTo](https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/lang/String.html#compareTo(java.lang.String))
