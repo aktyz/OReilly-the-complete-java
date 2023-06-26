@@ -15,7 +15,7 @@ public class ArrayListFun {
 //            System.out.println(namesList.get(i));
 //        }
 
-        for (String name: namesList) {
+        for (String name : namesList) {
             System.out.println(name);
         }
 
