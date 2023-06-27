@@ -140,4 +140,13 @@ Those classes wrap a value of primitive type variable in an object. An object of
 8. [Boolean](https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/lang/Boolean.html)
 
 ## Section 5
-[String equals](https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/lang/String.html#equals(java.lang.Object)) vs. [String compareTo](https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/lang/String.html#compareTo(java.lang.String))
+We are covering [String Class](https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/lang/String.html) in this module and its descendants.
+
+STRINGS ARE IMMUTABLE: the string object cannot be changed
+
+[StringBuilder Class](https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/lang/StringBuilder.html)
+STRINGBUILDERS objects are MUTABLE:
+- the object can be modified (mutated)
+- have many of the same methods as the String class (e.g. charAt(), indexOf(), length())
+- have many methods the String class doesn't have
+
