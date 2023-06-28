@@ -150,3 +150,7 @@ STRINGBUILDERS objects are MUTABLE:
 - have many of the same methods as the String class (e.g. charAt(), indexOf(), length())
 - have many methods the String class doesn't have
 
+## Section 6
+### User-Defined Methods
+- Discussion on pass-by-value vs. pass-by-reference
+- Methods overloading
