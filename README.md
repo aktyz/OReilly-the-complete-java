@@ -153,4 +153,4 @@ STRINGBUILDERS objects are MUTABLE:
 ## Section 6
 ### User-Defined Methods
 - Discussion on pass-by-value vs. pass-by-reference
-- Methods overloading
+- Methods overloading - SIGNATURE - combination of method's name and parameter list
