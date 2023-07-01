@@ -153,4 +153,17 @@ STRINGBUILDERS objects are MUTABLE:
 ## Section 6
 ### User-Defined Methods
 - Discussion on pass-by-value vs. pass-by-reference
+
+|                                |                      Pass-by-value                      |                Pass-by-reference                |
+|--------------------------------|:-------------------------------------------------------:|:-----------------------------------------------:|
+| What is passed in?             | a copy of the variable data is made and being passed in | the memory address of the variable is passed in |
+| Is the original data affected? |                           no                            |                       yes                       |
+> Java only supports **pass-by-value**
 - Methods overloading - SIGNATURE - combination of method's name and parameter list
+- RECURSION - when a method calls itself - For a method to be recursive, it needs:
+  - At least one base case (no recursion in it)
+  - At least one recursive case(this is where recursion occurs)
+
+> ### Running Java program from CMD with arguments
+> 1. Open CMD in the file your's Java main method file is stored
+> 2. Run in CMD: <code>java nameOfYourFile.java arg1 arg2</code>
