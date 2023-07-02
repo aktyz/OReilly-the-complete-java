@@ -167,3 +167,6 @@ STRINGBUILDERS objects are MUTABLE:
 > ### Running Java program from CMD with arguments
 > 1. Open CMD in the file your's Java main method file is stored
 > 2. Run in CMD: <code>java nameOfYourFile.java arg1 arg2</code>
+
+### 2D Arrays (Side Topic)
+Tensors and more specifics Matrices which are 2-dimensional Tensors
