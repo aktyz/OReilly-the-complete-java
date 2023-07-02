@@ -165,8 +165,77 @@ STRINGBUILDERS objects are MUTABLE:
   - At least one recursive case(this is where recursion occurs)
 
 > ### Running Java program from CMD with arguments
-> 1. Open CMD in the file your's Java main method file is stored
+> 1. Open CMD in the file yours Java main method file is stored
 > 2. Run in CMD: <code>java nameOfYourFile.java arg1 arg2</code>
 
 ### 2D Arrays (Side Topic)
 Tensors and more specifics Matrices which are 2-dimensional Tensors
+
+### Tic-Tac-Toe project
+There's instruction document provided.
+I will create it in this repo for the time being. After completing this course I can move this project to the separate repo and work out missing bits:
+- divide into separate files
+- add tests for the methods
+- publish on your GitLab
+
+### Help document for Tic-Tac-Toe project
+#### What is Tic-Tac-Toe?
+Paper and pen quick game of 9 fields, for two players, X and O
+Objective is to have 3 symbols in a row
+If no one gets 3 in a row, it's called a 'cat's game'
+#### Winning Examples
+- X wins with 3 in a column
+- X wins with 3 in a row
+- X wins in a diagonal
+- X wins in a reverse diagonal
+#### My Design and Hits
+In this section of the document, I'll describe the way I went about solving this project. This does not mean you have to do it exactly the way I did it, or at all. However, I do expect you to use good modularization, and divide some of the complexity of the project across multiple methods.
+
+##### Methods overview
+The methods I implemented(in addition to main, of course):
+- <code>runGame()</code> - the game loop
+  - initialize the winner as a string that is empty, since no one has one yet
+    - That string can be X, O or C which is the cat's game, that is, a tie
+  - create the game-board array of dimensions ROWS X COLS in this method
+  - call <code>initializeGame()</code>, which will fill the game-board 2D array with spaces
+  - call <code>printCurrentBoard()</code>, which do the obvious
+  - create the game loop that continues as long as the winner has not been found yet:
+    - the game loop must keep track of whose turn it is
+    - the game loop calls <code>getUserInput()</code> to obtain the user's input and modify the game-board if they select a valid move, and tell them to pick another cell if they select an invalid move
+    - after user input, the game loop calls <code>printCurrentBoard()</code> since the game-board has been updated
+    - the game loop calls <code>getWinner()</code> to establish if it is the end of the game of not
+    - flip whose turn it is to prepare for the next round
+    - at the end of the game loop, we check if the game-board is full and a winner hasn't been selected yet, in which case we set winner equal to C, which means it's the cat's game
+  - Still inside my <code>runGame()</code> method, but after the loop, we tell the user if the cat has won, or if there is a winner X or O
+- <code>initializeGame()</code> - sets the cells of the 2D array to spaces
+  - loops through the game-board and ensures all elements are set to a space
+  - Decide what character to use for empty game-board cell
+- <code>printCurrentBoard()</code> - prints whatever is in the current game-board
+  - prints the lines and the game-board according to their content
+- <code>getUserInput()</code> - gets the user input, and if valid, sets the game-board appropriately
+  - takes a parameter representing whose turn it is, and the game-board
+  - goes into a loop to determine if the input has been valid yet or not
+  - valid selections include values for rows and cols >= 0 and <= 2
+  - call <code>cellAlreadyOccupied()</code> to determine if we keep asking or consider the selected row and column to be legitimate or not
+  - after the validation loop, fill in the game-board cell with X or O depending on the turn
+- <code>cellAlreadyOccupied()</code> - returns ture if a given cell (by row and column) is already occupied
+  - takes the row and column being tested, and the game-board as parameters
+  - returns whether the game-board has a space at that row and column, which would mean the cell is available
+- <code>getWinner()</code> - returns "X", "O" if there is a clear winner, or a " " (a space) if there is no winner yet
+  - take the game-board as parameter
+  - checks winning conditions for the rows
+  - checks winning conditions for the columns if there was no row winner
+  - checks winning condition for diagonal top-left to bottom-right if no column winner
+  - checks winning condition for diagonal bottom-left to top-right
+  - default return value is empty string - remember that in the game loop, our winner variable is capturing the return value of <code>getWinner()</code>, and if it is empty string "", then the loop will continue
+- <code>isBoardFull()</code> - returns if the game-board is full or not
+  - takes the game-board as a parameter
+  - loops through the game-board and determines if all the cells are occupied
+  - Hint: there are 9 total cells, if I count nine non-spaces, then that means the game-board is full
+  - this method is crucial for determining the cat's game, that is, that there is a tie - no winner
+
+Strongly recommended not trying to write all the methods at once. For example, maybe try some "easier" methods that don't depend as much on the others, and then build your program up. Some relatively simple methods to work with at first, or at least get started:
+- <code>initializeGame()</code>
+- <code>printCurrentBoard()</code>
+- <code>isBoardFull()</code>
+- <code>cellAlreadyOccupied()</code>
