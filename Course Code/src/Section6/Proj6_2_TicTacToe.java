@@ -1,17 +1,17 @@
 package Section6;
 
 public class Proj6_2_TicTacToe {
+    static final String X = "X";
+    static final String O = "O";
+    static final String TIE = "C";
+    static final int ROWS = 3;
+    static final int COLS = 3;
     public static void main(String[] args) {
         runGame();
-    } // end of main()
+    }
 
     public static void runGame() {
         String winner = "";
-        String X = "X";
-        String O = "O";
-        String TIE = "C";
-        int ROWS = 3;
-        int COLS = 3;
         String[][] gameBoard = new String[ROWS][COLS];
         initializeGameBoard(gameBoard);
         printCurrentBoard(gameBoard);
@@ -52,6 +52,13 @@ public class Proj6_2_TicTacToe {
     }
 
     public static boolean isBoardFull(String[][] gameBoard) {
+        int sumOfOccupiedFields = 0;
+        for (int i = 0; i < gameBoard.length; i++) {
+            for (int j = 0; j < gameBoard[i].length; j++) {
+                if(!(gameBoard[i][j] == " ")) sumOfOccupiedFields++;
+            }
+        }
+        if(sumOfOccupiedFields == 9) return true;
         return false;
     }
 }
