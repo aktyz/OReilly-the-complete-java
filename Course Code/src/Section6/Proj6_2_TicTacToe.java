@@ -10,6 +10,7 @@ public class Proj6_2_TicTacToe {
     static final int ROWS = 3;
     static final int COLS = 3;
     static Scanner s = new Scanner(System.in);
+
     public static void main(String[] args) {
         runGame();
     }
@@ -23,7 +24,12 @@ public class Proj6_2_TicTacToe {
             printCurrentBoard(gameBoard);
             getUserInput(isXTurn, gameBoard);
             isXTurn = !isXTurn;
+            winner = getWinner(gameBoard);
+            if(winner.equals(X) || winner.equals(O)) break;
         }
+        if(isBoardFull(gameBoard)) winner = TIE;
+        System.out.println("The Game ended, winner is " + winner);
+        printCurrentBoard(gameBoard);
     }
 
     public static void initializeGameBoard(String[][] gameBoard) {
@@ -76,6 +82,22 @@ public class Proj6_2_TicTacToe {
     }
 
     public static String getWinner(String[][] gameBoard) {
+        if(gameBoard[0][0].equals(gameBoard[0][1]) && gameBoard[0][1].equals(gameBoard[0][2]))
+            return gameBoard[0][0];
+        if(gameBoard[1][0].equals(gameBoard[1][1]) && gameBoard[1][1].equals(gameBoard[1][2]))
+            return gameBoard[1][0];
+        if(gameBoard[2][0].equals(gameBoard[2][1]) && gameBoard[2][1].equals(gameBoard[2][2]))
+            return gameBoard[2][0];
+        if(gameBoard[0][0].equals(gameBoard[1][1]) && gameBoard[1][1].equals(gameBoard[2][2]))
+            return gameBoard[0][0];
+        if(gameBoard[0][0].equals(gameBoard[1][0]) && gameBoard[1][0].equals(gameBoard[2][0]))
+            return gameBoard[0][0];
+        if(gameBoard[0][1].equals(gameBoard[1][1]) && gameBoard[1][1].equals(gameBoard[2][1]))
+            return gameBoard[0][1];
+        if(gameBoard[0][2].equals(gameBoard[1][2]) && gameBoard[1][2].equals(gameBoard[2][2]))
+            return gameBoard[0][2];
+        if(gameBoard[0][2].equals(gameBoard[1][1]) && gameBoard[1][1].equals(gameBoard[2][0]))
+            return gameBoard[0][2];
         return "";
     }
 
