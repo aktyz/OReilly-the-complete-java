@@ -1,5 +1,7 @@
 package Section6;
 
+import java.util.Arrays;
+
 public class Proj6_2_TicTacToe {
     static final String X = "X";
     static final String O = "O";
@@ -18,10 +20,8 @@ public class Proj6_2_TicTacToe {
     }
 
     public static void initializeGameBoard(String[][] gameBoard) {
-        for(int i = 0; i < gameBoard.length; i++) {
-            for(int j = 0; j < gameBoard[i].length; j++) {
-                gameBoard[i][j] = " ";
-            }
+        for (String[] strings : gameBoard) {
+            Arrays.fill(strings, " ");
         }
     }
 
@@ -53,12 +53,11 @@ public class Proj6_2_TicTacToe {
 
     public static boolean isBoardFull(String[][] gameBoard) {
         int sumOfOccupiedFields = 0;
-        for (int i = 0; i < gameBoard.length; i++) {
-            for (int j = 0; j < gameBoard[i].length; j++) {
-                if(!(gameBoard[i][j] == " ")) sumOfOccupiedFields++;
+        for (String[] strings : gameBoard) {
+            for (String string : strings) {
+                if (!(string.equals(" "))) sumOfOccupiedFields++;
             }
         }
-        if(sumOfOccupiedFields == 9) return true;
-        return false;
+        return sumOfOccupiedFields == 9;
     }
 }
