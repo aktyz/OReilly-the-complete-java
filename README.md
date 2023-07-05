@@ -239,3 +239,9 @@ Strongly recommended not trying to write all the methods at once. For example, m
 - <code>printCurrentBoard()</code>
 - <code>isBoardFull()</code>
 - <code>cellAlreadyOccupied()</code>
+
+### My notes during completing Tic-Tac-Toe project
+
+[java.utils.Arrays](https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/util/Arrays.html)
+This class is a member of the [Java Collections Framework](https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/util/package-summary.html#CollectionsFramework).
+> Where you can find [Java Collections Tutorial](https://docs.oracle.com/javase/tutorial/collections/index.html) to go through next
