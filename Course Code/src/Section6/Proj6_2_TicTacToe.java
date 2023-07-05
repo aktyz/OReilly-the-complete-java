@@ -1,6 +1,7 @@
 package Section6;
 
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class Proj6_2_TicTacToe {
     static final String X = "X";
@@ -8,15 +9,21 @@ public class Proj6_2_TicTacToe {
     static final String TIE = "C";
     static final int ROWS = 3;
     static final int COLS = 3;
+    static Scanner s = new Scanner(System.in);
     public static void main(String[] args) {
         runGame();
     }
 
     public static void runGame() {
+        boolean isXTurn = true;
         String winner = "";
         String[][] gameBoard = new String[ROWS][COLS];
         initializeGameBoard(gameBoard);
-        printCurrentBoard(gameBoard);
+        while(!isBoardFull(gameBoard)) {
+            printCurrentBoard(gameBoard);
+            getUserInput(isXTurn, gameBoard);
+            isXTurn = !isXTurn;
+        }
     }
 
     public static void initializeGameBoard(String[][] gameBoard) {
@@ -44,11 +51,28 @@ public class Proj6_2_TicTacToe {
         }
     }
 
-    public static void getUserInput(boolean isXTurn, String[][] gameBoard) {}
+    public static void getUserInput(boolean isXTurn, String[][] gameBoard) {
+        String player = isXTurn ? X : O;
+        System.out.print("Player " + player + " please provide the row number (range 1 - 3) you would like to take:\t");
+        int playerRow = s.nextInt();
+        s.nextLine();
+        System.out.print("Player " + player + " please provide the column number (range 1 - 3) you would like to take:\t");
+        int playerColumn = s.nextInt();
+        s.nextLine();
+        boolean isUserInputValid = (playerRow >= 1 && playerRow < 4)
+                && (playerColumn >= 1 && playerColumn < 4)
+                && (!isCellAlreadyOccupied(playerRow - 1, playerColumn - 1, gameBoard));
+        if(isUserInputValid) {
+            gameBoard[playerRow - 1][playerColumn - 1] = player;
+        }
+        else {
+            System.out.println("This cell doesn't exist or the cell is already occupied, try again");
+            getUserInput(isXTurn, gameBoard);
+        }
+    }
 
     public static boolean isCellAlreadyOccupied(int row, int col, String[][] gameBoard) {
-        if(gameBoard[row][col].equals(" ")) return false; // no, cell is Empty
-        else return true; // yes, cell is Occupied
+        return !gameBoard[row][col].equals(" ");
     }
 
     public static String getWinner(String[][] gameBoard) {
