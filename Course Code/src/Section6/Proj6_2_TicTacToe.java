@@ -47,7 +47,8 @@ public class Proj6_2_TicTacToe {
     public static void getUserInput(boolean isXTurn, String[][] gameBoard) {}
 
     public static boolean isCellAlreadyOccupied(int row, int col, String[][] gameBoard) {
-        return false;
+        if(gameBoard[row][col].equals(" ")) return false; // no, cell is Empty
+        else return true; // yes, cell is Occupied
     }
 
     public static String getWinner(String[][] gameBoard) {
