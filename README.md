@@ -245,3 +245,22 @@ Strongly recommended not trying to write all the methods at once. For example, m
 [java.utils.Arrays](https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/util/Arrays.html)
 This class is a member of the [Java Collections Framework](https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/util/package-summary.html#CollectionsFramework).
 > Where you can find [Java Collections Tutorial](https://docs.oracle.com/javase/tutorial/collections/index.html) to go through next
+
+
+## Section 7 Object-Oriented Programming (OOP)
+In OOP, an object represents an entity that has both:
+- behaviour
+- data
+
+This entity with its behaviour and data form OOP **encapsulation**. Which is first primary principle of OOP.
+
+### Three primary principles of OOP
+1. Encapsulation
+   Refers to uniting behaviour and data in a single entity called an object.
+   Advantages of encapsulation:
+   - portability - we can combine various behaviour and data, and move/use it across project
+   - security - information/implementation hiding
+   We write a Java Class, which works like a blueprint for objects.
+2. Inheritance
+3. Polymorphism
+
