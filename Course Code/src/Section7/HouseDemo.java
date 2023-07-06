@@ -2,12 +2,8 @@ package Section7;
 
 public class HouseDemo {
     public static void main(String[] args) {
-        House myHouse = new House();
+        House myHouse = new House(2, 6, "red");
         House yourHouse = new House();
-
-        myHouse.setNumStories(2);
-        myHouse.setNumWindows(6);
-        myHouse.setColor("red");
 
         yourHouse.setNumStories(3);
         yourHouse.setNumWindows(10);

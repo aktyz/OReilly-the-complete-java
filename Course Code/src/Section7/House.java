@@ -13,7 +13,6 @@ public class House {
     /**
      * Instance/copy methods - that's why we do not add 'static' description
      * to them
-     * @return
      */
     public int getNumStories() {
         return numStories;
@@ -29,7 +28,6 @@ public class House {
     /**
      * Methods that set class values are called Mutators/Setters
      * Methods that get class values are called Accessors/Observers/Getters
-     * @return
      */
     public int getNumWindows() {
         return numWindows;
@@ -45,5 +43,21 @@ public class House {
         this.color = color;
     }
 
-
+    /**
+     * No-arg constructor (default constructor provided by Java for your class,
+     * until you don't write any constructor in the class)
+     */
+    public House() {
+        numStories = 1;
+        numWindows = 4;
+        color = "gray";
+    }
+    /**
+     * Parametrized Constructor
+     */
+    public House(int numStories, int numWindows, String color) {
+        this.numStories = numStories;
+        this.numWindows = numWindows;
+        this.color = color;
+    }
 }
