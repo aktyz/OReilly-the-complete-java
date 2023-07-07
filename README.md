@@ -264,3 +264,26 @@ This entity with its behaviour and data form OOP **encapsulation**. Which is fir
 2. Inheritance
 3. Polymorphism
 
+### Instance methods&fields vs. static methods&fields
+<code>static</code> in front of a method/field means the method/field will be one for all class instances created.
+
+No <code>static</code> method/field is created as a new one for each class instance created and can have access to <code>this</code> methods/fields.
+
+### UML Class Diagram example for Rectangle Java Class
+> UML stands for Unified Modeling Language and is not specific to JAVA
+
+Three sections in Class Diagram:
+1. Class name
+2. Class fields
+3. Class methods
+
+Class fields and methods take format: <br>
+<code><+/-> <identifier(name of field/method)> : <field/function return type></code> <br>
+where <code><+/-></code> stands for:
+- <code>+</code> public type
+- <code>-</code> private type
+
+> My UML modeling tool: lucid.app <br>
+> https://lucid.app/lucidchart/invitations/accept/inv_ff5e1a22-537f-45fb-8145-070f32e00bf0 <br>
+> Under the link my example on Rectangle Class
+
