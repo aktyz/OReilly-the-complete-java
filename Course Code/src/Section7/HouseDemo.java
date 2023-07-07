@@ -17,8 +17,8 @@ public class HouseDemo {
 
     public static void printHouseData(House house) {
         System.out.println("The house is " + house.getColor()
-                + " and has " + house.getNumStories() + " stories"
-                + " and " + house.getNumWindows() + " windows.");
+                + "\nand has " + house.getNumStories() + " stories"
+                + "\nand " + house.getNumWindows() + " windows.");
         System.out.println();
     }
 }
