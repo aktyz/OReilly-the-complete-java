@@ -24,8 +24,8 @@ public class Circle {
 
     public void printCircleInfo() {
         System.out.println("r = " + radius);
-        System.out.println("C = " + circumference());
-        System.out.println("A = " + area());
+        System.out.println("C = " + String.format("%.2f", circumference()));
+        System.out.println("A = " + String.format("%.2f", circumference()));
         System.out.println();
     }
 }

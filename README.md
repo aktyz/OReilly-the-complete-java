@@ -189,7 +189,7 @@ If no one gets 3 in a row, it's called a 'cat's game'
 - X wins in a diagonal
 - X wins in a reverse diagonal
 #### My Design and Hits
-In this section of the document, I'll describe the way I went about solving this project. This does not mean you have to do it exactly the way I did it, or at all. However, I do expect you to use good modularization, and divide some of the complexity of the project across multiple methods.
+In this section of the document, I'll describe the way I went about solving this project. This does not mean you have to do it exactly the way I did it, or at all. However, I do expect you to use good modularization, and divide some complexity of the project across multiple methods.
 
 ##### Methods overview
 The methods I implemented(in addition to main, of course):
@@ -286,4 +286,13 @@ where <code><+/-></code> stands for:
 > My UML modeling tool: lucid.app <br>
 > https://lucid.app/lucidchart/invitations/accept/inv_ff5e1a22-537f-45fb-8145-070f32e00bf0 <br>
 > Under the link my example on Rectangle Class
+<br><br>
+
+> [Java 14 Math docs](https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/lang/Math.html)<br><br>
+> [String.format()](https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/lang/String.html#format(java.lang.String,java.lang.Object...))<br>
+> ```java public static String format(String format, Object... args)```<br>
+> Parameters:<br>
+> <code>format</code> - A format string with [specific syntax](https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/util/Formatter.html#syntax)<br>
+> <code>args</code> - Arguments referenced by the format specifiers in the <code>format</code> string.<br>
+
 
