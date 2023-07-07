@@ -10,8 +10,16 @@ public class Proj7_1_BankAccountDemo {
         System.out.print("What the initial amount of money?\t");
         BankAccount account1 = new BankAccount(person, s.nextInt());
         s.nextLine();
-        System.out.print("What amount do you want to withdraw?\t");
+        BankAccount account2 = new BankAccount("Bob Robinson");
+        account2.deposit(7000);
+        account1.printBankAccountInfo();
+        account2.printBankAccountInfo();
+
+        System.out.print(person + ", what amount do you want to withdraw?\t");
         account1.withdraw(s.nextInt());
         s.nextLine();
+
+        System.out.println("Trying to withdraw more that Rob's has:");
+        account2.withdraw(10000);
     }
 }

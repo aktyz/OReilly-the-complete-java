@@ -27,26 +27,27 @@ public class BankAccount {
     }
     public void deposit(int amount) {
         if(amount > 0) {
-            this.balance = this.balance + amount;
+            balance += amount;
         }
         else {
-            System.out.println("You need to provide some money to deposit");
+            System.out.println("Amount to deposit must be greater than 0");
         }
     }
 
     public void withdraw(int amount) {
-        if(amount > 0) {
-            if(amount < this.balance) {
-                this.balance = this.balance - amount;
-                System.out.println("Collect your money");
-                System.out.println("Remaining balance: " + this.balance);
-            }
-            else {
-                System.out.println("Your balance is not sufficient for the withdraw");
-            }
+        if(amount > 0 && amount <= balance) {
+                this.balance -= amount;
+                System.out.println("Remaining balance: " + balance);
         }
         else {
-            System.out.println("You need to provide a positive amount of money to withdraw");
+            System.out.println("The amount to withdraw must be greater than 0 " +
+                    "and less than your balance which is " + balance);
         }
+    }
+
+    public void printBankAccountInfo() {
+        System.out.println("Bank Account owner is: " + owner);
+        System.out.println("Bank Account balance is: " + balance);
+        System.out.println();
     }
 }
