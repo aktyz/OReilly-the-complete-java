@@ -17,14 +17,9 @@ public class BookDemo {
                 "Programming",
                 800
         );
-        printBookDetails(gameOfThrones);
-        printBookDetails(mathBook);
-        printBookDetails(javaBook);
-    }
-    public static void printBookDetails(Book book) {
-        System.out.println(book.getTitle());
-        System.out.println("by " + book.getAuthor());
-        System.out.println("has " + book.getNumPages() + " pages, and its genre is " + book.getGenre());
-        System.out.println();
+
+        gameOfThrones.printBookDetails();
+        mathBook.printBookDetails();
+        javaBook.printBookDetails();
     }
 }

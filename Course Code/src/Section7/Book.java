@@ -13,6 +13,13 @@ public class Book {
         this.numPages = numPages;
     }
 
+    public void printBookDetails() {
+        System.out.println(title);
+        System.out.println("by " + author);
+        System.out.println("has " + numPages + " pages, and its genre is " + genre);
+        System.out.println();
+    }
+
     public String getAuthor() {
         return author;
     }
