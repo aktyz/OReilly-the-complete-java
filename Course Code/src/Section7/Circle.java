@@ -25,7 +25,11 @@ public class Circle {
     public void printCircleInfo() {
         System.out.println("r = " + radius);
         System.out.println("C = " + String.format("%.2f", circumference()));
-        System.out.println("A = " + String.format("%.2f", circumference()));
+        System.out.println("A = " + String.format("%.2f", area()));
         System.out.println();
+    }
+
+    public String returnCircleInfo() {
+        return ("r = " + radius + "\nC = " + String.format("%.2f", circumference()) + "\nA = " + String.format("%.2f", area()) + "\n\n");
     }
 }

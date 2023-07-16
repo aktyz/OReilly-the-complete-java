@@ -303,7 +303,7 @@ System.out.println(System.getProperty("user.dir"));
 ```
 [File Class Documentation](https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/io/File.html)
 
-[PrintWriter class](https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/io/PipedWriter.html)
+[PrintWriter class](https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/io/PrintWriter.html)
 <br>PrintWriter class is very easy to work with! <br><br>
 [BufferedWriter class](https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/io/BufferedWriter.html)
 
