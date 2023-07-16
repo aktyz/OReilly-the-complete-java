@@ -19,7 +19,7 @@ public class WriteNames {
             }
             pw.close();
         } catch(FileNotFoundException ex) {
-            System.out.println(ex.getMessage());
+            System.out.println("Can't write to file!");
         }
 
     }
