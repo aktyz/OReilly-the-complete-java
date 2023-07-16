@@ -11,4 +11,4 @@ input.txt in root directory
 991
 126
 154
-John
+This is the text line (and not INT) generating InputMismatchException

@@ -11,4 +11,3 @@ input.txt inside Package8
 991
 126
 154
-John

@@ -296,4 +296,10 @@ where <code><+/-></code> stands for:
 > <code>args</code> - Arguments referenced by the format specifiers in the <code>format</code> string.<br>
 
 ## Section 8 Persisting data in external files
+[System Properties](https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/lang/System.html#getProperties())
+```java
+// little helper to know current working directory
+System.out.println(System.getProperty("user.dir"));
+```
+[File Class Documentation](https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/io/File.html)
 
