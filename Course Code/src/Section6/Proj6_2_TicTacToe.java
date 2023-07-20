@@ -34,7 +34,7 @@ public class Proj6_2_TicTacToe {
 
     public static void initializeGameBoard(String[][] gameBoard) {
         for (String[] strings : gameBoard) {
-            /* java.utils.Arrays is part of Java Collections Framework
+            /* Walk through Java Collections Framework tutorial
             * TODO: https://docs.oracle.com/javase/tutorial/collections/index.html
             **/
             Arrays.fill(strings, " ");

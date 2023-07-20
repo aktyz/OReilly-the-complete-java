@@ -307,4 +307,14 @@ System.out.println(System.getProperty("user.dir"));
 <br>PrintWriter class is very easy to work with! <br><br>
 [BufferedWriter class](https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/io/BufferedWriter.html)
 
+## COURSE COMPLETED
+```java
+/* Walk through Java Collections Framework tutorial
+ * TODO: https://docs.oracle.com/javase/tutorial/collections/index.html
+ **/
+/* Walk through Java Exceptions tutorial
+ * TODO: https://docs.oracle.com/javase/tutorial/essential/exceptions/index.html
+ **/
+```
+
 
